@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bake Street, Chennai | Unofficial Demo Concept</title>
+  <meta name="description" content="Unofficial demo concept website for Bake Street, a local bakery in Chennai.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="demo-banner" role="note">Unofficial demo concept. Not approved by or affiliated with the business. Details marked [Placeholder] are unverified.</div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="brand">Bake <span>Street</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a class="btn btn-small" href="#enquiry" data-whatsapp>Enquire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Artisan bakery &middot; Chennai</p>
+          <h1>Freshly baked, <em>made with care.</em></h1>
+          <p class="lead">Breads, pastries, cakes and cookies from your neighbourhood bakery. Browse the sample menu, order online or send us an enquiry on WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#menu">View the menu</a>
+            <a class="btn btn-ghost" href="#order">Order online</a>
+          </div>
+        </div>
+        <div class="hero-image img-wrap" data-label="Fresh bread">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=75" alt="Freshly baked loaves of bread on a wooden surface (stock photo)" loading="eager" width="900" height="1000">
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <p class="eyebrow">Featured</p>
+        <h2 id="featured-title">Bakery favourites</h2>
+        <p class="note">Sample product categories for the concept. Replace with the bakery's real products.</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="img-wrap" data-label="Bread">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=75" alt="Rustic bread loaves (stock photo)" loading="lazy" width="700" height="500">
+            </div>
+            <div class="card-body">
+              <h3>Fresh Breads</h3>
+              <p>[Placeholder] Short description of the bakery's bread range.</p>
+              <span class="tag">Sample item</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap" data-label="Pastries">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=75" alt="Golden croissants on a tray (stock photo)" loading="lazy" width="700" height="500">
+            </div>
+            <div class="card-body">
+              <h3>Pastries</h3>
+              <p>[Placeholder] Short description of the pastry range.</p>
+              <span class="tag">Sample item</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap" data-label="Cakes">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=75" alt="Slice of chocolate cake on a plate (stock photo)" loading="lazy" width="700" height="500">
+            </div>
+            <div class="card-body">
+              <h3>Cakes</h3>
+              <p>[Placeholder] Short description of cakes and custom orders.</p>
+              <span class="tag">Sample item</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section-alt" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <p class="eyebrow">Menu</p>
+        <h2 id="menu-title">Sample menu</h2>
+        <p class="note">Item names are generic examples. Prices are not shown because they are unverified. Check the live menu on Zomato or ask on WhatsApp.</p>
+
+        <div class="filters" role="group" aria-label="Filter menu by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="breads" aria-pressed="false">Breads</button>
+          <button class="filter-btn" data-filter="pastries" aria-pressed="false">Pastries</button>
+          <button class="filter-btn" data-filter="cakes" aria-pressed="false">Cakes</button>
+          <button class="filter-btn" data-filter="cookies" aria-pressed="false">Cookies</button>
+          <button class="filter-btn" data-filter="savoury" aria-pressed="false">Sandwiches &amp; Burgers</button>
+        </div>
+
+        <ul class="menu-list" id="menu-list">
+          <li class="menu-item" data-category="breads"><div><h3>Sourdough loaf</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="breads"><div><h3>Multigrain bread</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="pastries"><div><h3>Butter croissant</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="pastries"><div><h3>Danish pastry</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="cakes"><div><h3>Chocolate cake</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="cakes"><div><h3>Custom celebration cake</h3><p>Sample item. Confirm availability with the bakery.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="cookies"><div><h3>Chocolate chip cookie</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="cookies"><div><h3>Butter cookies</h3><p>Sample item. Replace with real product.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="savoury"><div><h3>Grilled sandwich</h3><p>Sample item. Confirm fillings on the live menu.</p></div><span class="price">Price: ask</span></li>
+          <li class="menu-item" data-category="savoury"><div><h3>Veg burger</h3><p>Sample item. Confirm on the live menu.</p></div><span class="price">Price: ask</span></li>
+        </ul>
+        <p class="empty" id="menu-empty" hidden>No items in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ONLINE ORDER -->
+    <section class="section" id="order" aria-labelledby="order-title">
+      <div class="container">
+        <p class="eyebrow">Online order</p>
+        <h2 id="order-title">Order online</h2>
+        <p class="note">This website does not take orders itself. These buttons open the bakery's own channels. Delivery areas, charges, timings and availability are set by the bakery and the platform, so please check there.</p>
+        <div class="order-grid">
+          <article class="order-card order-primary">
+            <h3>Order on Zomato</h3>
+            <p>The bakery has a Zomato listing. Open it and use the "Order Online" tab to see the live menu and prices.</p>
+            <a class="btn" href="https://www.zomato.com/chennai/bake-street-ambattur" data-zomato target="_blank" rel="noopener noreferrer">Open Bake Street on Zomato</a>
+          </article>
+          <article class="order-card">
+            <h3>Ask on WhatsApp</h3>
+            <p>Custom cakes, bulk orders or availability questions? Send a message and the bakery can reply directly.</p>
+            <a class="btn btn-ghost" href="#" data-whatsapp target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+          </article>
+          <article class="order-card">
+            <h3>Call the bakery</h3>
+            <p>Phone number as shown on the Zomato listing (seen 11 Oct 2026). Please verify with the owner.</p>
+            <a class="btn btn-ghost" href="tel:+917845008667">Call +91 78450 08667</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="img-wrap" data-label="Baking">
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=75" alt="Baker preparing pastries in a kitchen (stock photo)" loading="lazy" width="800" height="600">
+        </div>
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A neighbourhood bakery</h2>
+          <p>[Placeholder] This space is for Bake Street's real story, once the owner provides it: when it opened, who bakes, and what makes the bakery special.</p>
+          <p>This page is an unofficial design concept. No history, awards or claims about the business have been invented.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <p class="eyebrow">Gallery</p>
+        <h2 id="gallery-title">A taste of the bakery</h2>
+        <p class="note">Stock photos for illustration only. Swap in the bakery's own photos with the owner's permission.</p>
+        <div class="gallery">
+          <div class="img-wrap" data-label="Bread"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=70" alt="Crusty bread loaves (stock photo)" loading="lazy" width="600" height="600"></div>
+          <div class="img-wrap" data-label="Croissants"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=70" alt="Croissants (stock photo)" loading="lazy" width="600" height="600"></div>
+          <div class="img-wrap" data-label="Cake"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=70" alt="Chocolate cake (stock photo)" loading="lazy" width="600" height="600"></div>
+          <div class="img-wrap" data-label="Baking"><img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=600&q=70" alt="Baking in progress (stock photo)" loading="lazy" width="600" height="600"></div>
+          <div class="img-wrap" data-label="Pastries"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&q=70" alt="Assorted baked treats (stock photo)" loading="lazy" width="600" height="600"></div>
+          <div class="img-wrap" data-label="Treats"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=70" alt="Decorated baked treats (stock photo)" loading="lazy" width="600" height="600"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section-alt" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <p class="eyebrow">Reviews</p>
+        <h2 id="reviews-title">What customers say</h2>
+        <p class="note">No customer reviews have been copied or invented. The rating below was visible on the bakery's Zomato listing and may have changed since.</p>
+
+        <div class="reviews-layout">
+          <div class="rating-box">
+            <p class="rating-score" aria-label="Rated 3.8 out of 5">3.8<span aria-hidden="true">&#9733;</span></p>
+            <p class="rating-text">Delivery rating on Zomato, based on 29 ratings (seen Oct 2026)</p>
+            <a class="btn btn-small" href="https://www.zomato.com/chennai/bake-street-ambattur" data-zomato target="_blank" rel="noopener noreferrer">Read reviews on Zomato</a>
+          </div>
+
+          <div class="review-cards">
+            <figure class="review-card">
+              <span class="tag">Placeholder review</span>
+              <blockquote>[Placeholder] Replace with a real customer review, used with the reviewer's or owner's permission.</blockquote>
+              <figcaption>[Reviewer name] &middot; [Source]</figcaption>
+            </figure>
+            <figure class="review-card">
+              <span class="tag">Placeholder review</span>
+              <blockquote>[Placeholder] Replace with a real customer review, used with the reviewer's or owner's permission.</blockquote>
+              <figcaption>[Reviewer name] &middot; [Source]</figcaption>
+            </figure>
+            <figure class="review-card">
+              <span class="tag">Placeholder review</span>
+              <blockquote>[Placeholder] Replace with a real customer review, used with the reviewer's or owner's permission.</blockquote>
+              <figcaption>[Reviewer name] &middot; [Source]</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <p class="eyebrow">Visit</p>
+        <h2 id="visit-title">Location, hours &amp; contact</h2>
+        <p class="note">Details below were taken from the bakery's public Zomato listing on 11 Oct 2026 and are not owner-verified.</p>
+        <div class="visit-grid">
+          <div class="info-box">
+            <h3>Location</h3>
+            <p>No-38, Thiruverkadu Road, TNHB Colony, Dharma Nagar, Ayappakkam, Chennai, 600077, Tamil Nadu</p>
+            <a class="btn btn-ghost btn-small" id="map-link" href="#" target="_blank" rel="noopener noreferrer">Open in Google Maps (listed address)</a>
+          </div>
+          <div class="info-box">
+            <h3>Opening hours</h3>
+            <ul class="hours">
+              <li><span>Listed on Zomato, Sun 11 Oct 2026</span><span>10am &ndash; 11:30pm</span></li>
+              <li><span>Other days</span><span>[Placeholder] confirm</span></li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h3>Contact</h3>
+            <p>Phone: <a href="tel:+917845008667">+91 78450 08667</a> (per Zomato listing)</p>
+            <p>Email: [Placeholder email]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHATSAPP CTA -->
+    <section class="cta" id="enquiry" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Questions about orders or cakes?</h2>
+        <p>Send an enquiry on WhatsApp and ask about availability, prices and custom orders.</p>
+        <a class="btn btn-light" href="#" data-whatsapp target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
+        <p class="wa-note" id="wa-note" hidden>Placeholder WhatsApp number in use. Set the real number in script.js before publishing.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand brand-light">Bake <span>Street</span></a>
+        <p class="footer-note">Unofficial demo concept. Not affiliated with or endorsed by the business.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+    <p class="copyright container">&copy; <span id="year">2026</span> Design concept. Stock images from Unsplash for illustration only. Zomato is a trademark of its owner and is referenced only to link to the public listing.</p>
+  </footer>
+
+  <a class="wa-float" href="#" data-whatsapp target="_blank" rel="noopener noreferrer" aria-label="Enquire on WhatsApp">WhatsApp</a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
